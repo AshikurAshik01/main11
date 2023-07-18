@@ -5,7 +5,7 @@
 }
 
 .full-website{
-    width:90%;
+    width: 1270px;
     margin: 0 auto;
 }
 
@@ -76,7 +76,9 @@
     margin: 35px 20px;
     border-radius: 10px;
     transition: .5s;
-    display: inline-block;
+    
+   display: inline-block;
+   
     
 }
 .service:hover{
@@ -115,7 +117,7 @@
     width: 100px;
     height: 100px;
     background-color: #34495e;
-    border: 2px dashed #c9650d;
+    border: 4px dashed #c9650d;
     display: inline-block;
     border-radius: 50%;
 }
@@ -148,7 +150,7 @@
     height:150px ;
     border-radius: 50%;
     display: inline-block;
-    border: 2px solid #c9650d;
+    border: 4px solid #c9650d;
     margin-top: 70px;
     position: relative;
 
@@ -162,22 +164,23 @@
 
 .hover-div{
     background-color: rgba(201, 101, 13, .50);
-    width: 100;
-    height:0;
+    width: 100%;
+    height:100%;
     position: absolute;
     top: 0;
     left: 0;
-    visibility: hidden;
+    visibility: visible;
     text-align: center;
     transition: .5s;
-    opacity: 0;   
+    opacity: 0; 
+    border-radius: 50%;  
 }
 
 .hover-div h3{
     height: 100%;
     width: 100%;
     margin-top: 90px;
-} 
+ }  
 
 
 .image:hover .hover-div{
@@ -196,9 +199,12 @@ form{
 
 input{
 
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 5px;
+    outline: none;
 
 }
 
@@ -207,6 +213,7 @@ input{
     background-color: #9b59b6;
     font-size: 20px;
     transition: .5s;
+    font-weight: bold;
 }
 
 .login:hover{
